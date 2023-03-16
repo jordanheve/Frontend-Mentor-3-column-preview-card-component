@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    max-width: 58rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    padding: 2.8rem;
+    height: 32rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 300;
+    line-height: 1.6rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.header {
+    font-size: 2.4rem;
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+  }
+
+.container:nth-child(1){
+    background-color: hsl(31, 77%, 52%);
+}
+
+.container:nth-child(2){
+    background-color: hsl(184, 100%, 22%);
+}
+
+.container:nth-child(3){
+    background-color: hsl(179, 100%, 13%);
+}
+
+.btn {
+    background: hsl(0, 0%, 95%);
+    border-radius: 2rem;
+    border: 2px solid hsl(0, 0%, 95%);
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: "Lexend Deca", sans-serif;
+    width: 70%;
+}
+
+.container:nth-child(1) .btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.container:nth-child(2) .btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.container:nth-child(3) .btn {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn:hover  {
+    background: none;
+    cursor: pointer;
+    color: white !important; 
+}
+
+.attribution {
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: .9rem;
+    color:hsl(179, 100%, 13%);
+}
+
+.attribution a {
+    color: hsl(184, 100%, 22%);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color:hsl(31, 77%, 52%);
+}
+ 
+@media (max-width: 550px) {
+    main {
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .attribution {
+        position: unset;
+        margin-bottom: 1rem;
+    }
+}
